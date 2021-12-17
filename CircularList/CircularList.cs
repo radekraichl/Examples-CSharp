@@ -9,5 +9,6 @@ namespace CircularListTest
     internal class CircularList
     {
         public int Current { get; set; }
+        public int Current { get; set; }
     }
 }
