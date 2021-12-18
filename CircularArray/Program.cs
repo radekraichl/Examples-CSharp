@@ -11,7 +11,7 @@ namespace CircularArrayTest
             myCircuralArr[1] = 2;
             myCircuralArr[2] = 3;
 
-            // testovaci smycka
+            // testovací smyčka
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine(myCircuralArr.Value);

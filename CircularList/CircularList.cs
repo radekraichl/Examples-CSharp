@@ -1,13 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CircularListTest
+﻿namespace CircularListTest
 {
-    internal class CircularList
+    internal class CircularList<T> : List<T>
     {
-        public int Current { get; set; }
+        public int Index { get; set; }
+
+        public T Value
+        {
+            get => this[Index];
+            set => this[Index] = value;
+        }
+
+        public void Next()
+        {
+            if (++Index == Count)
+            {
+                Index = 0;
+            }
+        }
     }
 }
