@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularList", "CircularLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularArray", "CircularArray\CircularArray.csproj", "{5D9BD7AC-B261-4018-B30C-E743595A28FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandler", "EventHandler\EventHandler.csproj", "{AA766251-947A-4601-9869-299090DE3145}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{5D9BD7AC-B261-4018-B30C-E743595A28FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D9BD7AC-B261-4018-B30C-E743595A28FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D9BD7AC-B261-4018-B30C-E743595A28FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA766251-947A-4601-9869-299090DE3145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA766251-947A-4601-9869-299090DE3145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA766251-947A-4601-9869-299090DE3145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA766251-947A-4601-9869-299090DE3145}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
