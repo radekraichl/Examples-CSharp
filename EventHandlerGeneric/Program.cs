@@ -10,8 +10,6 @@ keyEvent.KeyPress += (sender, e) => Console.WriteLine(" Received keystroke: " + 
 // Use a lambda expression to count keypresses.
 keyEvent.KeyPress += (sender, e) => count++;            // count is an outer variable
 
-Console.WriteLine("Enter some characters. " + "Enter a period to stop.");
-
 do
 {
     key = Console.ReadKey();
