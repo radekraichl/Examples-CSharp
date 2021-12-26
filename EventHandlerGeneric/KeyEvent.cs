@@ -12,7 +12,7 @@ internal class KeyEvent
         if (KeyPress != null)
         {
             keyEventArgs.Char = key;
-            KeyPress(this, keyEventArgs);
+            KeyPress(this, KeyEventArgs.Empty);
         }
     }
 }
