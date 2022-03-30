@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace EnumerableMethod
 {
@@ -16,7 +15,7 @@ namespace EnumerableMethod
                     Console.WriteLine(item);
             }
         }
-
+       
         static IEnumerable GetNumbers()
         {
             for (int i = 0; i < 10; i++)

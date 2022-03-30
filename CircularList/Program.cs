@@ -1,5 +1,4 @@
-﻿using CircularListTest;
-
+﻿
 CircularList<string> circularList = new() { "raz", "dva", "tři" };
 
 circularList.Index = 2;

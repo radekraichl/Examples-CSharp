@@ -1,7 +1,8 @@
-﻿EventProgram eventProgram = new();
+﻿
+EventProgram eventProgram = new();
 
 // Lambda
-eventProgram.DemoEvent += (sender, e) => 
+eventProgram.DemoEvent += (sender, e) =>
     Console.WriteLine($"Udalost - sender: {sender}, arg1: {(e as MyEventArgs).Argument1}");
 
 // Ekvivalenty
