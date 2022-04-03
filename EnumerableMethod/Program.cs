@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace EnumerableMethod
 {
@@ -24,7 +23,7 @@ namespace EnumerableMethod
                 yield return i;
             }
             
-            yield return "Konec";
+            yield return "END";
         }
     }
 }

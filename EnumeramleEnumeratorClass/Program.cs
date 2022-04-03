@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace EnumeramleEnumeratorClass
+namespace EnumerableEnumeratorClass
 {
     class Program
     {

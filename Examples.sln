@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumeratorMethod", "Enumera
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableClass", "EnumerableClass\EnumerableClass.csproj", "{A7A07011-A10D-43D8-8CB4-20E790AD3538}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumeramleEnumeratorClass", "EnumeramleEnumeratorClass\EnumeramleEnumeratorClass.csproj", "{F9D068C7-659B-403E-8D95-B0E9AC3671B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableEnumeratorClass", "EnumeramleEnumeratorClass\EnumerableEnumeratorClass.csproj", "{F9D068C7-659B-403E-8D95-B0E9AC3671B5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableGenericMethod", "EnumerableGeneric\EnumerableGenericMethod.csproj", "{E787555B-9AB1-484B-BAE7-C6F6A2425BC0}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularList", "CircularLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularArray", "CircularArray\CircularArray.csproj", "{5D9BD7AC-B261-4018-B30C-E743595A28FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandler", "EventHandler\EventHandler.csproj", "{AA766251-947A-4601-9869-299090DE3145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHandler", "EventHandler\EventHandler.csproj", "{AA766251-947A-4601-9869-299090DE3145}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
