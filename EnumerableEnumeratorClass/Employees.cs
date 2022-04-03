@@ -1,31 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace EnumerableEnumeratorClass
 {
-    class Program
-    {
-        static void Main()
-        {
-            Employees employees = new();
-
-            foreach (var item in employees)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.WriteLine();
-
-            for (int i = 0; i < employees.Count; i++)
-            {
-                Console.WriteLine(employees[i]);
-            }
-        }
-    }
-
-    record Person(string Name, int Age);
-
     class Employees : IEnumerable, IEnumerator
     {
         private readonly List<Person> employees;

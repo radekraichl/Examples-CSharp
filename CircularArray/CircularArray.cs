@@ -125,14 +125,10 @@ namespace CircularArrayTest
         }
 
         // Interface implementations:
-
-        public IEnumerator<T> GetEnumerator() => this;
-
-        IEnumerator IEnumerable.GetEnumerator() => this;
-
-        public T Current => this[enumIdx];
-
         object IEnumerator.Current => Current == null ? -1 : Current;
+        public IEnumerator<T> GetEnumerator() => this;
+        IEnumerator IEnumerable.GetEnumerator() => this;
+        public T Current => this[enumIdx];
 
         public bool MoveNext()
         {

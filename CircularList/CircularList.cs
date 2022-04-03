@@ -1,21 +1,18 @@
-﻿namespace CircularListTest
+﻿internal class CircularList<T> : List<T>
 {
-    internal class CircularList<T> : List<T>
+    public int Index { get; set; }
+
+    public T Value
     {
-        public int Index { get; set; }
+        get => this[Index];
+        set => this[Index] = value;
+    }
 
-        public T Value
+    public void Next()
+    {
+        if (++Index == Count)
         {
-            get => this[Index];
-            set => this[Index] = value;
-        }
-
-        public void Next()
-        {
-            if (++Index == Count)
-            {
-                Index = 0;
-            }
+            Index = 0;
         }
     }
 }

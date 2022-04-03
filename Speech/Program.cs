@@ -4,9 +4,9 @@ using System.Speech.Synthesis;
 namespace Speech
 {
     class Program
-	{
-		static void Main()
-		{
+    {
+        static void Main()
+        {
             // Initialize a new instance of the SpeechSynthesizer.  
             SpeechSynthesizer synth = new SpeechSynthesizer();
 
