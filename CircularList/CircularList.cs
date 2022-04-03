@@ -1,6 +1,20 @@
 ﻿internal class CircularList<T> : List<T>
 {
-    public int Index { get; set; }
+    private int index;
+
+    public int Index
+    {
+        get => index;
+        set
+        {
+            if (value > Count - 1)
+            {
+                throw new IndexOutOfRangeException(nameof(CircularList<T>));
+            }
+
+            index = value;
+        }
+    }
 
     public T Value
     {
@@ -10,9 +24,9 @@
 
     public void Next()
     {
-        if (++Index == Count)
+        if (++index >= Count)
         {
-            Index = 0;
+            index = 0;
         }
     }
 }
