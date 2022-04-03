@@ -9,16 +9,19 @@ namespace EnumerableClass
         {
             Cars cars = new();
 
-            foreach (var item in cars)
+            Console.WriteLine("foreach (var car in cars)");
+            foreach (var car in cars)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("{0}".PadLeft(8), car);
             }
 
-            IEnumerator data = new Cars().GetEnumerator();
+            Console.WriteLine();
 
+            Console.WriteLine("while (data.MoveNext())");
+            IEnumerator data = new Cars().GetEnumerator();
             while (data.MoveNext())
             {
-                Console.WriteLine($"Auto : {data.Current}");
+                Console.WriteLine("{0}".PadLeft(8), data.Current);
             }
         }
     }
