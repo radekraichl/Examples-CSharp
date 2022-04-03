@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-int number = 1234;
+int number = 123456;
 
 Console.WriteLine("{0} - {1}", number, Convert.ToString(number, 2).PadLeft(32, '0'));
 

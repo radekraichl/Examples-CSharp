@@ -1,26 +1,32 @@
 ﻿int value = int.MaxValue;
 
+Console.WriteLine("int.MaxValue");
 Console.WriteLine("{0, 20:N0} - {1}", value, Convert.ToString(value, 2).PadLeft(32, '0'));
 
 // negace
 value = ~value;
+Console.WriteLine("Negace");
 Console.WriteLine("{0, 20:N0} - {1}", value, Convert.ToString(value, 2).PadLeft(32, '0'));
 Console.WriteLine();
 
-// posun >>=
-int cislo = -512;
-for (int i = 0; i < 11; i++)
+// posun vpravo >>=
+Console.WriteLine("Posun vpravo >>=");
+value = -16;
+
+for (int i = 0; i < 6; i++)
 {
-    Console.WriteLine("{0, 20:N0} - {1}", cislo, Convert.ToString(cislo, 2).PadLeft(32, '0'));
-    cislo >>= 1;
+    Console.WriteLine("{0, 20:N0} - {1}", value, Convert.ToString(value, 2).PadLeft(32, '0'));
+    value >>= 1;
 }
 
 Console.WriteLine();
 
-// posun <<=
-cislo = 1;
-for (int i = 0; i < 34; i++)
+// posun vlevo <<=
+Console.WriteLine("Posun vlevo <<=");
+value = 268435456;
+
+for (int i = 0; i < 6; i++)
 {
-    Console.WriteLine("{0, 20:N0} - {1}", cislo, Convert.ToString(cislo, 2).PadLeft(32, '0'));
-    cislo <<= 1;
+    Console.WriteLine("{0, 20:N0} - {1}", value, Convert.ToString(value, 2).PadLeft(32, '0'));
+    value <<= 1;
 }
