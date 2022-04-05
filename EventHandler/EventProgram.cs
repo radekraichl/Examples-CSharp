@@ -4,6 +4,6 @@
 
     public void OnDemoEvent()
     {
-        DemoEvent?.Invoke(this, new MyEventArgs());
+        DemoEvent?.Invoke(this, new CustomEventArgs());
     }
 }
