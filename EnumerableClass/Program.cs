@@ -17,8 +17,9 @@ namespace EnumerableClass
 
             Console.WriteLine();
 
-            Console.WriteLine("while (data.MoveNext())");
             IEnumerator data = new CarList().GetEnumerator();
+
+            Console.WriteLine("while (data.MoveNext())");
             while (data.MoveNext())
             {
                 Console.WriteLine("{0}".PadLeft(8), data.Current);

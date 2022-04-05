@@ -1,5 +1,4 @@
-﻿
-Cisla cisla = Cisla.ONE | Cisla.TWO | Cisla.FOUR;
+﻿Cisla cisla = Cisla.ONE | Cisla.TWO | Cisla.FOUR;
 
 Console.WriteLine(cisla);
 Console.WriteLine(cisla.HasFlag(Cisla.NONE));
