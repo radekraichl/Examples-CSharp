@@ -35,7 +35,7 @@ namespace EnumerableEnumeratorClass
         public void Reset() => position = -1;
 
         public object Current => employees[position];
-            
+
         public bool MoveNext()
         {
             position++;

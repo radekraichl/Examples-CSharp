@@ -7,7 +7,7 @@ namespace EnumerableClass
     {
         static void Main()
         {
-            Cars cars = new();
+            CarList cars = new();
 
             Console.WriteLine("foreach (var car in cars)");
             foreach (var car in cars)
@@ -18,7 +18,7 @@ namespace EnumerableClass
             Console.WriteLine();
 
             Console.WriteLine("while (data.MoveNext())");
-            IEnumerator data = new Cars().GetEnumerator();
+            IEnumerator data = new CarList().GetEnumerator();
             while (data.MoveNext())
             {
                 Console.WriteLine("{0}".PadLeft(8), data.Current);

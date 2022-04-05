@@ -5,7 +5,7 @@ namespace EnumerableClass
     /// <summary>
     /// Třída implementující IEnumerable která umožnuje procházení aut pomocí foreach
     /// </summary>
-    class Cars : IEnumerable
+    class CarList : IEnumerable
     {
         private readonly string[] carlist =
         {

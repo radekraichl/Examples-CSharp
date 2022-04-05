@@ -10,16 +10,18 @@ namespace EnumerableEnumeratorClass
         {
             Employees employees = new();
 
+            Console.WriteLine("Staff list (foreach)");
             foreach (var item in employees)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("{0}".PadLeft(10), item.ToString());
             }
 
             Console.WriteLine();
 
+            Console.WriteLine("Staff list (for)");
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees[i]);
+                Console.WriteLine("{0}".PadLeft(10), employees[i]);
             }
         }
     }
