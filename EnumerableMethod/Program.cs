@@ -10,19 +10,23 @@ namespace EnumerableMethod
             foreach (var item in GetNumbers())
             {
                 if (item is int num)
-                    Console.WriteLine(num);
+                {
+                    Console.WriteLine($"{num} (int)");
+                }
                 else
-                    Console.WriteLine(item);
+                {
+                    Console.WriteLine($"{item} (object)");
+                }
             }
         }
-       
+
         static IEnumerable GetNumbers()
         {
             for (int i = 0; i < 10; i++)
             {
                 yield return i;
             }
-            
+
             yield return "END";
         }
     }
