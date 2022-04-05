@@ -11,7 +11,7 @@ namespace EnumeratorMethod
 
             while (data.MoveNext())
             {
-                Console.WriteLine(data.Current + " ");
+                Console.WriteLine(data.Current);
             }
         }
 
