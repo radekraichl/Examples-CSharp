@@ -1,5 +1,4 @@
-﻿
-CircularList<string> circularList = new() { "one", "two", "three" };
+﻿CircularList<string> circularList = new() { "one", "two", "three" };
 
 circularList.Index = 2;
 
