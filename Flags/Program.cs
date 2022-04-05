@@ -1,33 +1,23 @@
-﻿Cisla cisla = Cisla.ONE | Cisla.TWO | Cisla.FOUR;
+﻿Cisla cisla = Cisla.ONE | Cisla.TWO | Cisla.THREE;
 
 Console.WriteLine(cisla);
-Console.WriteLine(cisla.HasFlag(Cisla.NONE));
+Console.WriteLine("cisla.HasFlag(Cisla.FOUR): " + cisla.HasFlag(Cisla.FOUR));
 
-CislaSNulou cislaSNulou = new();
-cislaSNulou |= CislaSNulou.ONE;
-cislaSNulou ^= CislaSNulou.ONE;
+cisla |= Cisla.FOUR;
+Console.WriteLine(cisla);
+Console.WriteLine("cisla.HasFlag(Cisla.FOUR): " + cisla.HasFlag(Cisla.FOUR));
 
-Console.WriteLine(cislaSNulou);
-Console.WriteLine($"NONE: {cislaSNulou.Equals(CislaSNulou.NONE)}");     // dotaz na NONE
-Console.WriteLine(cislaSNulou.HasFlag(CislaSNulou.TWO));
-Console.WriteLine((cislaSNulou & CislaSNulou.ONE) == CislaSNulou.ONE);
+Console.WriteLine($"NONE: {cisla.Equals(Cisla.NONE)}");     // query for NONE
+cisla = 0;
+Console.WriteLine($"NONE: {cisla.Equals(Cisla.NONE)}");     // query for NONE
 
 [Flags]
 enum Cisla
-{
-    NONE = 1,
-    ONE = 2,
-    TWO = 4,
-    THREE = 8,
-    FOUR = 16,
-};
-
-[Flags]
-enum CislaSNulou
 {
     NONE = 0,
     ONE = 1,
     TWO = 2,
     THREE = 4,
     FOUR = 8,
+    ALL = ONE | TWO | THREE | FOUR,
 };
