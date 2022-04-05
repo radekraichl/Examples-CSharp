@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableEnumeratorClass",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security", "Security\Security.csproj", "{51215491-B680-448C-ACAD-E03E7EE34ADE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAction", "EventAction\EventAction.csproj", "{D0A063A0-98D9-4E42-935F-FF574ADA0832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{51215491-B680-448C-ACAD-E03E7EE34ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51215491-B680-448C-ACAD-E03E7EE34ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51215491-B680-448C-ACAD-E03E7EE34ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A063A0-98D9-4E42-935F-FF574ADA0832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A063A0-98D9-4E42-935F-FF574ADA0832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A063A0-98D9-4E42-935F-FF574ADA0832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A063A0-98D9-4E42-935F-FF574ADA0832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
