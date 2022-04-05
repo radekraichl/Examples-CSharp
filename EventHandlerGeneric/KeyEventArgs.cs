@@ -1,7 +1,6 @@
 ﻿namespace EventHandlerGeneric;
 
-public class KeyEventArgs
+public class KeyEventArgs : EventArgs
 {
-    public static readonly KeyEventArgs Empty;
     public char Char { get; set; }
 }
