@@ -7,9 +7,11 @@ namespace EnumerableGenericMethod
     {
         static void Main()
         {
+            Console.WriteLine("NAMES:");
+            
             foreach (var item in GetNames())
             {
-                Console.WriteLine(item);
+                Console.WriteLine("{0}".PadLeft(10), item);
             }
         }
 
